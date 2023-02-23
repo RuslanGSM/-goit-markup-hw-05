@@ -51,10 +51,10 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero overlay">
+      <section class="hero design">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -349,7 +349,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-1"
-                    fill="currentColor"  
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -359,7 +359,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-2"
-                    fill="currentColor" 
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -369,7 +369,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-3"
-                    fill="currentColor" 
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -379,7 +379,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-4"
-                    fill="currentColor" 
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -389,7 +389,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-5"
-                    fill="currentColor" 
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -399,7 +399,7 @@
                 <svg class="customers-icon" width="104" height="56">
                   <use
                     href="./css/images/client-icons.svg#icon-Client-6"
-                    fill="currentColor" 
+                    fill="currentColor"
                   ></use>
                 </svg>
               </a>
@@ -470,5 +470,18 @@
         </ul>
       </div>
     </footer>
+    <!-- Modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="close-icon">
+            <use href="./css/images/close-icon.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
