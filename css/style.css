@@ -116,12 +116,12 @@ body {
   text-decoration: none;
   color: var(--title-color);
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--tap-link-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav :active {
@@ -165,12 +165,12 @@ body {
   text-decoration: none;
   color: var(--text-color);
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-address .link:hover,
 .site-address .link:focus {
   color: var(--tap-link-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-address :active {
@@ -228,6 +228,9 @@ body {
   border-color: var(--primary-btn-color);
   outline: none;
   border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -235,7 +238,6 @@ body {
   background-color: var(--tap-link-color);
   color: var(--primary-background-color);
   border-color: var(--tap-link-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio-seсtion */
@@ -265,19 +267,46 @@ body {
   cursor: pointer;
   padding: 12px 24px 12px 24px;
   color: var(--primary-btn-color);
-  background: var(--trd-background-color);
+  background-color: var(--trd-background-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--trd-background-color);
-  background: var(--tap-link-color);
+  background-color: var(--tap-link-color);
   border-color: var(--tap-link-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn-active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  cursor: pointer;
+  padding: 12px 24px 12px 24px;
+  color: var(--primary-background-color);
+  background-color: var(--tap-link-color);
+  border-color: var(--tap-link-color);
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn-active:hover,
+.filter-btn-active:focus {
+  color: var(--tap-link-color);
+  background-color: var(--trd-background-color);
+  border: 1px solid #e7e9fc;
+  box-shadow: none;
 }
 
 .decoration {
@@ -328,6 +357,7 @@ img.example {
   height: 100%;
   background-color: var(--primary-btn-color);
   transform: translateY(100%);
+  padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -338,11 +368,10 @@ img.example {
 .decoration-actions-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--trd-background-color);
   max-width: 296px;
-  margin: 40px 32px 164px 32px;
 }
 
 .projects-list {
@@ -370,7 +399,6 @@ img.example {
 .projects-card-content:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title h2 {
@@ -518,12 +546,12 @@ img.example {
   height: 40px;
   background-color: var(--primary-btn-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--tap-link-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -561,13 +589,13 @@ img.example {
   color: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: var(--primary-btn-color);
   border: 1px solid var(--primary-btn-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -649,13 +677,12 @@ img.example {
   height: 40px;
   background-color: var(--text-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-link:hover,
 .studio-link:focus {
   background-color: #31d0aa;
-  border-radius: 50%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-icon {
@@ -716,10 +743,11 @@ img.example {
   fill: currentColor;
   padding-top: 0;
   padding-left: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal .close:hover,
 .modal .close:focus {
   color: #e7e9fc;
   background-color: var(--tap-link-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
